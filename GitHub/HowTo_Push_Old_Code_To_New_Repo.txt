@@ -1,0 +1,18 @@
+PUSH A PROJECT TO GITHUB WITHOUT A CLONED REPO. 
+
+1. Create a GitHub repository for the existing project.
+2. Copy the GitHub URL for the new repo to the clipboard.
+3. Perform a git init command in the root folder of the existing project.
+4. Add all of the existing project’s files to the Git index and then commit.
+5. Add the GitHub repo as a remote reference for the existing project.
+6. Perform a git push operation with the -u and -f switches.
+7. Verify that the existing project’s files have been pushed to GitHub.
+8. How to push code to GitHub
+
+Sequential Code:
+
+git init
+git add .
+git commit -m "COMMIT MESSAGE"
+git remote add origin [SSH TO REPO]
+git push -u -f origin master
